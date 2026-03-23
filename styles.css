@@ -1416,7 +1416,8 @@ p {
     overflow: hidden;
 }
 
-.vision-box .section-badge {
+.vision-box .section-badge,
+.mission-box .section-badge {
     background-color: rgba(255, 255, 255, 0.15);
     color: #fff;
 }
