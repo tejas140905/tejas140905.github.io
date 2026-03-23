@@ -1,0 +1,39 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# BrowserSync & Lite-server
+.edge-profile/
+.edge-shot-lite/
+.edge-shot-live/
+.edge-shot-page/
+.edge-shot-top/
+bs-config.json
+bs-config.js
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# OS related
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Build/Dist (if applicable)
+dist/
+build/

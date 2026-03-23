@@ -1,0 +1,14 @@
+{
+  "name": "empowertech-ngo-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static NGO website for student education and agricultural technology awareness in Pune and West Pune.",
+  "scripts": {
+    "dev": "lite-server",
+    "start": "lite-server"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
+
