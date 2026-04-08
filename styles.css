@@ -338,6 +338,10 @@ p {
     display: inline-block;
 }
 
+#typing-h1 {
+    white-space: pre-line;
+}
+
 /* @keyframes blink {
     from, to { border-color: transparent }
     50% { border-color: var(--color-secondary) }
