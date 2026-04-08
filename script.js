@@ -102,7 +102,7 @@ const newsletterHandler = () => {
 
 // Typing Effect
 const typeEffect = () => {
-    const text = "Sarvatah Foundation | Affordable Learning. Real Impact.";
+    const text = "Sarvatah Foundation Development for Everyone. Everyone Deserves to Grow";
     const h1 = document.getElementById('typing-h1');
     let i = 0;
     let isDeleting = false;
