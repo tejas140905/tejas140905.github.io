@@ -742,9 +742,10 @@ p {
 }
 
 .workshop-carousel {
-    display: flex;
-    gap: 1.5rem;
-    overflow-x: auto;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 2rem;
+    overflow-x: auto !important;
     padding: 2rem 5% 4rem;
     margin: 0 -5%; /* Counteract container padding for edge-to-edge swipe */
     scroll-snap-type: x mandatory;
@@ -752,15 +753,18 @@ p {
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none; /* Firefox */
     scroll-padding: 5%;
+    width: auto !important;
 }
 
 .workshop-carousel::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+    display: none !important; /* Chrome, Safari, Opera */
 }
 
 .workshop-card {
-    flex: 0 0 450px;
-    height: 550px;
+    flex: 0 0 450px !important;
+    width: 450px !important;
+    min-width: 450px !important;
+    height: 550px !important;
     border-radius: var(--border-radius-lg);
     overflow: hidden;
     scroll-snap-align: center;
@@ -768,13 +772,14 @@ p {
     transition: var(--transition-smooth);
     background-color: #f1f5f9; /* Better fallback background */
     position: relative;
+    flex-shrink: 0 !important;
 }
 
 .workshop-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
     transition: transform 0.8s ease;
 }
 
