@@ -743,9 +743,11 @@ p {
 
 .workshop-carousel {
     display: flex !important;
+    flex-direction: row !important;
     flex-wrap: nowrap !important;
     gap: 2rem;
     overflow-x: auto !important;
+    overflow-y: hidden !important;
     padding: 2rem 5% 4rem;
     margin: 0 -5%; /* Counteract container padding for edge-to-edge swipe */
     scroll-snap-type: x mandatory;
@@ -754,6 +756,7 @@ p {
     scrollbar-width: none; /* Firefox */
     scroll-padding: 5%;
     width: auto !important;
+    max-width: 100vw !important;
 }
 
 .workshop-carousel::-webkit-scrollbar {
@@ -773,6 +776,7 @@ p {
     background-color: #f1f5f9; /* Better fallback background */
     position: relative;
     flex-shrink: 0 !important;
+    display: block !important;
 }
 
 .workshop-card img {
