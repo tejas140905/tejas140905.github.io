@@ -743,7 +743,7 @@ p {
 
 .workshop-carousel {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     overflow-x: auto;
     padding: 2rem 5% 4rem;
     margin: 0 -5%; /* Counteract container padding for edge-to-edge swipe */
@@ -751,6 +751,7 @@ p {
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none; /* Firefox */
+    scroll-padding: 5%;
 }
 
 .workshop-carousel::-webkit-scrollbar {
@@ -758,14 +759,15 @@ p {
 }
 
 .workshop-card {
-    flex: 0 0 400px;
-    height: 500px;
+    flex: 0 0 450px;
+    height: 550px;
     border-radius: var(--border-radius-lg);
     overflow: hidden;
     scroll-snap-align: center;
     box-shadow: var(--shadow-premium);
     transition: var(--transition-smooth);
-    background-color: #fff;
+    background-color: #f1f5f9; /* Better fallback background */
+    position: relative;
 }
 
 .workshop-card img {
@@ -787,8 +789,12 @@ p {
 
 @media (max-width: 768px) {
     .workshop-card {
-        flex: 0 0 300px;
-        height: 400px;
+        flex: 0 0 85vw; /* Almost full width on mobile */
+        height: 450px;
+    }
+    .workshop-carousel {
+        gap: 1rem;
+        padding-bottom: 3rem;
     }
 }
 
