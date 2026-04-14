@@ -761,10 +761,10 @@ p {
 }
 
 .workshop-card {
-    flex: 0 0 450px !important;
-    width: 450px !important;
-    min-width: 450px !important;
-    height: 550px !important;
+    flex: 0 0 380px !important;
+    width: 380px !important;
+    min-width: 380px !important;
+    height: 480px !important;
     border-radius: var(--border-radius-lg);
     overflow: hidden;
     scroll-snap-align: center;
